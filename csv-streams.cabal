@@ -21,3 +21,15 @@ library
                      , io-streams
                      , bytestring
                      , attoparsec
+
+test-suite spec
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  ghc-options:         -Wall
+  default-extensions:  OverloadedStrings
+  build-depends:       base ==4.*
+                     , hspec
+                     , csv-streams
+                     , io-streams
+                     , bytestring
